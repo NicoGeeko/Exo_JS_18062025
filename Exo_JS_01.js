@@ -105,3 +105,20 @@ doctors.pop();
 
 console.log (doctors);
 doctors.push(doctorQuinn);
+
+
+let noteA = 10 ;
+let noteB = 2 ;
+
+function Booby (a,b){
+
+    let result=0;
+
+    result = (a+b)/2;
+
+    return result;
+}
+
+Booby ( noteA,noteB);
+
+console.log ( Booby ( noteA,noteB));
