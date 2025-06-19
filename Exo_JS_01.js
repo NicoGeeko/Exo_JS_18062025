@@ -248,7 +248,7 @@ if (comp1 > comp2) {
 }
 */
 
-let i=0;
+/* let i=0;
 let dessin = [];
 
 while (i<10){
@@ -256,3 +256,139 @@ while (i<10){
     dessin.push("#");
     console.log(dessin);
 }
+*/
+
+
+let tabSkool = [5,10,7,19,13];
+let moyenneSkool = 0;
+
+
+function calculator(tab) {
+        // fait une boucle jusqu'à la fin du nombre de cellules !  
+    for (let i=0; i < tab.length; i++) {
+
+        // addition de toutes les cellules !   
+        moyenneSkool += tab[i];
+        
+    }
+
+    // fait la moyenne de la somme part rapport aux nombres de cellules 
+    moyenneSkool = moyenneSkool/tab.length;
+
+    return moyenneSkool;
+}
+
+console.log (calculator(tabSkool));
+
+
+////////////////
+
+let james = ["guitar"];
+let freddie = ["vocals"];
+let duff = ["bass"];
+let john = ["bass"];
+let brian = ["guitar"];
+let roger = ["drums"];
+let axl = ["vocals"];
+let slash = ["guitar"];
+let izzy = ["guitar"];
+let kirk = ["guitar"];
+let lars = ["drums"];
+let jason = ["bass"];
+
+let queen2 = [freddie,john,brian,roger];
+let guns = [axl,slash,duff,izzy];
+let metallica2 = [james,kirk,lars,jason];
+
+let band3 = [queen2,guns,metallica2];
+
+
+
+/*function search (tabloo) {
+        // fait une boucle jusqu'à la fin du nombre de cellules !  
+    for (let i=0; i < tabloo.length; i++)  {
+
+        for (let k=0 ; k < tabloo[i].length; k++) {
+            console.log ([i],[k], "la réponse est :", tabloo [i][j]);
+            
+        }
+
+    }
+}
+*/
+
+
+/*let miniTab1 = [10, 40, 4.25];
+let miniTab2 = [32, 7.41, 4];
+let miniTab3 = [10, 74, 514];
+
+let tabPrincipal = [miniTab1, miniTab2, miniTab3];
+
+for (let i = 0; i < tabPrincipal.length; i++) {
+    for (let j = 0; j < tabPrincipal[i].length; j++) {
+
+        console.log([i], [j], "La valeur est :", tabPrincipal[i][j]);
+    }
+}*/
+
+/* let voiture = {
+    "nbChevaux" : 500,
+    "vitesseMax" : 450,
+    "faiblesse" : ["accélération","adhérence"],
+};
+
+let solex= {
+    "nbChevaux" : 1,
+    "vitesseMax" : 30,
+    "faiblesse" : ["pas rapide","inventé à la création de la roue !"],
+};
+
+let afficher = "vitesseMax";
+
+
+console.log(voiture.vitesseMax);
+console.log(voiture["vitesseMax"]);
+console.log(solex[afficher]);
+console.log(voiture.faiblesse[1]);
+
+
+
+
+
+console.log(solex.vitesseMax);
+
+// rajoute une clé !
+solex.marque = "Solex";
+
+console.log(solex);
+
+// supprime une clé !
+delete solex.marque;
+
+console.log(solex); */
+
+let jinjer = {
+    "Number of Artist" : 4,
+    "Discography" : ["Cloud Factory","King of Everything","Wallflowers","Duel"],
+    "Music Style" : ["Groove Metal","Progressive"],
+    "Artist Name" : {
+        "Eugene" : "Bass Guitar",
+        "Vlad" : "Drums",
+        "Roman" :"Guitar",
+        "Tatiana" :"Vocals"
+}
+}
+
+
+let ukrainianBand = ["Tati","Eug","Vlady", "Rom"];
+let armenianBand = ["Serj","Daron","John","Shavo"];
+
+let bandImpossible = ["Johnny",...ukrainianBand, ...armenianBand];
+
+
+
+let bandImpossible2 = bandImpossible;
+
+bandImpossible2.push("Hallyday");
+
+console.log (bandImpossible);
