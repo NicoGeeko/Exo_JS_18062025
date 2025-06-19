@@ -122,3 +122,137 @@ function Booby (a,b){
 Booby ( noteA,noteB);
 
 console.log ( Booby ( noteA,noteB));
+
+let random = Math.random();
+console.log(random);
+
+
+let tabloo = [2,4,9,32,random];
+
+let multiplex3 = tabloo.map(function(nombre){
+    return nombre *3;
+});
+
+
+console.log(tabloo);
+
+console.log(multiplex3);
+
+console.log(Math.floor(6.28));
+
+console.log(Math.floor(random*5));
+
+// EXO DU 19/06
+
+function mention(francais,math,philo) {
+    if ((francais+math+philo)/3 >= 15) 
+         {
+            return "Très bien !";
+         }
+
+     else if ((francais+math+philo)/3 >= 10) 
+         {
+            return "Assez bien !";
+         }
+
+    else {
+        return "T'es nul !";
+
+    }     
+};
+
+
+console.log(mention(20,20,20));
+
+
+console.log(mention(5,13,6));
+
+
+// TEST ALTERNATIF
+
+let francais2 = 5;
+let math2 = 10;
+let philo2 = 12;
+
+let tabStudent = [francais2,math2,philo2];
+
+function mentionDeux (tab) {
+
+        if (tab/ tab.length >= 15) 
+         {
+            return "Très bien !";
+         }
+
+        else if (tab/ tab.length >= 10) 
+         {
+            return "Assez bien !";
+         }
+
+        else {
+            return "T'es nul !";
+
+    } 
+}
+
+
+console.log(mentionDeux(tabStudent));
+
+
+// PROMPT //
+
+//let signe = prompt("Quel est votre signe astrologique ?");
+
+/*if (signe.toLowerCase() == "verseau") {
+  console.log("Oh ? moi aussi je suis verseau :)");
+}
+
+// Différentes façons d'utiliser prompt
+//signe = window.prompt(); // ouvre une fenêtre de saisie sans texte
+//signe = prompt(); //  ouvre une fenêtre de saisie sans texte
+
+// ouvre une fenêtre avec le texte "Quelle est la réponse ?"
+//signe = window.prompt("Quelle est la réponse ?");
+
+// ouvre une fenêtre avec le texte "Quelle est la réponse ?"
+// avec la valeur "42" comme réponse par défaut
+//signe = window.prompt("Quelle est la réponse ?", "42");
+
+*/
+
+/*let number1 = parseInt(prompt("Donne-moi 1 premier nombre"));
+let number2 = parsInt(prompt("Donne-moi 1 second nombre"));
+
+if (number1>number2) {
+    console.log(number1);
+}
+
+else if  (number1<number2) {
+    console.log(number2);
+}
+
+else {
+    console.log("les 2 sont égaux");
+
+}*/
+
+// Correction
+
+/*let comp1 = parseInt(prompt('Saisissez un premier nombre'));
+let comp2 = parseInt(prompt('Saisissez un deuxième nombre'));
+if (comp1 > comp2) {
+    console.log(comp1 + " est plus grand que " + comp2);
+} else if (comp1 < comp2) {
+    console.log(comp1 + " est plus petit que " + comp2);
+} else {
+    console.log(comp1 + " les deux nombres sont égaux");
+}
+*/
+
+let i=0;
+let dessin = [];
+
+while (i<10){
+    i++;
+    dessin.push("#");
+    console.log(dessin);
+}
